@@ -3,8 +3,9 @@ const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
+const Constraint = Matter.Constraint;
 
-var constrint;
+var constraint1;
 var b1, b2, b3, b4, b5;
 
 function preload(){
@@ -20,7 +21,7 @@ function setup() {
 
 	//Create the Bodies Here.
 	b1 = new Bob(200, 200, 20);
-	constarint = new ConstraintC(b1, {x:200, y:200});
+	constraint1 = new ConstraintC(b1, {x:200, y:200});
 
 	Engine.run(engine);
   
